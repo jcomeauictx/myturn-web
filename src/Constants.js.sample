@@ -1,0 +1,2 @@
+export const DISCUSSION_STATUS = ['Not Started', 'Waiting for New Speaker', 'A User is Speaking', 'Discussion Finished'];
+export const API_URL = 'http://localhost:3000';
