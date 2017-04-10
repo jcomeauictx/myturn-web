@@ -1,6 +1,8 @@
 DRYRUN ?= --dry-run
 DELETE ?= --delete
 TIMESTAMP := $(shell date +%Y%m%d%H%M%S)
+NODE_PATH ?= /usr/local/lib/node_modules
+export
 devinstall:
 	npm install -g react-scripts
 install:
