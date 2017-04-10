@@ -8,6 +8,7 @@ install:
 	sudo rsync -avcz $(DRYRUN) $(DELETE) \
 	 . /var/www/myturn-web/
 build: .FORCE
+	npm install -g --only=dev
 	mv -f public/static /tmp/static-$(TIMESTAMP)
 	if npm run build; then \
 	 mv build public/static; \
